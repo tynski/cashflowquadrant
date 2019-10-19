@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Klasa</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <div class="container-flex">
+            <h1 id="nickname">Szymon Majkut</h1>
+        </div>
+    </header>
+
+    <div class="container" id="imageContainer">
+        <img id="image" class="img-fluid" alt="ClassImage" />
+    </div>
+
+    <div class="container" id="description"></div>
+
+    <div class="container">
+        <ul class="list-group list-group-flush" id="Desclist"></ul>
+    </div>
+
+    <div class="container" id="button">
+        <button type="button" class="btn btn-primary btn-lg " data-toggle="button" aria-pressed="false"
+            autocomplete="off"> Ofery Polecane Dla twojej Grupy</button>
+    </div>
+
+    <script>
+
+        var customerInfo = $.getJSON("http://5a0bcad7.ngrok.io/users/1",
+            function (data) {
+                var items = [];
+                $.each(data, function (key, val) {
+                    items.push(val);
+                });
+                console.log(items);
+                updateListOfDescriptions(items[1]);
+            })
+
+        var DragonArrayDesc = [
+            "Smoki są królami oszczędzania, lubią się wylegiwać na kupce złota",
+            "Na Smoczy skarb czeka wiele zagrożeń. Inflacja jest jego największym Wrogiem, strzeż się jej Smoku!",
+            "Przed inflacją można obronić się stosując lokaty, konta oszczędnościowe lub inwestując skarby"
+        ];
+        var DragonDesc = "Złoty Smok Król Oszczędzania";
+
+        var PigArrayDesc = [
+            "Świnki uwielbiają pieniążki dodatkowo nie lubią się ich pozbywać",
+            "W zbieraniu Złota ważny jest cel i motywacja, świnki są tego mistrzami",
+            "Świnki przez brak konta oszczędnościowego lub lokaty często padają ofiarami inflacji!"
+        ];
+        var PigDesc = "Świnka Skarbonka, Mistrzyni Oszczędzania"
+
+        function updateListOfDescriptions(level) {
+            switch (level) {
+                case "high":
+                    tab = DragonArrayDesc;
+                    desc = DragonDesc;
+                    imgSrc = "Dragon.png";
+                    break;
+                case "low":
+                    tab = PigArrayDesc;
+                    desc = PigDesc;
+                    imgSrc = "Pig.png";
+                    break;
+            }
+            for (i = 0; i < tab.length; i++) {
+                document.getElementById('Desclist').innerHTML += '<li class="list-group-item">' + tab[i] + '</li>';
+            }
+            document.getElementById("description").innerHTML = desc;
+            document.getElementById("image").src = imgSrc;
+        }
+
+
+    </script>
+</body>
+
+</html>

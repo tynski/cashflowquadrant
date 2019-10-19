@@ -1,0 +1,48 @@
+body {
+    background-color:#ffb84d;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    padding: 1.5%;
+}
+img{
+    width: 25%;
+    height: 25%;
+    min-width: 200px;
+    max-height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn, .btn-primary, .btn-lg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    background-color: rgb(255, 72, 0);
+    border-color: rgb(255, 8, 0);
+
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    background-color: rgb(196, 63, 11);
+    border-color: rgb(158, 3, 3);
+}
+
+.list-group, .list-group-flush, .list-group-item{
+    background-color:#ffac4d ;
+    padding: 1%;
+}
+
+#button{
+    padding: 1%;
+}
+
+#description{
+    padding: 2%;
+    font-size: 20px;
+}
+
+
