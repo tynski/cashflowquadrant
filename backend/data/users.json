@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "total_income": 5000,
+        "total_outcome": 4700,
+        "current_balance": 20000
+    },
+    {
+        "id": 2,
+        "total_income": 2100,
+        "total_outcome": 1600,
+        "current_balance": 20000
+    },
+    {
+        "id": 3,
+        "total_income": 3000,
+        "total_outcome": 1700,
+        "current_balance": 23000
+    },
+    {
+        "id": 4,
+        "total_income": 2300,
+        "total_outcome": 2100,
+        "current_balance": 3700
+    },
+    {
+        "id": 5,
+        "total_income": 4600,
+        "total_outcome": 1200,
+        "current_balance": 1200
+    },
+    {
+        "id": 6,
+        "total_income": 3000,
+        "total_outcome": 2000,
+        "current_balance": 10000
+    }
+]
