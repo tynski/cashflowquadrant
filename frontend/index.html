@@ -35,7 +35,7 @@
 
     <script>
 
-        var customerInfo = $.getJSON("http://5a0bcad7.ngrok.io/users/1",
+        var customerInfo = $.getJSON("http://127.0.0.1:5000/users/1",
             function (data) {
                 var items = [];
                 $.each(data, function (key, val) {
@@ -64,7 +64,7 @@
                 case "high":
                     tab = DragonArrayDesc;
                     desc = DragonDesc;
-                    imgSrc = "iamges/Dragon.png";
+                    imgSrc = "images/Dragon.png";
                     break;
                 case "low":
                     tab = PigArrayDesc;
