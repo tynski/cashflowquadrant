@@ -6,9 +6,9 @@ Setup:
 pip install -r requirements.txt
 
 TODO:
-*Database
-*classification algorithm
-*mobile application
+* Database
+* classification algorithm
+* mobile application
 
 Contributors:
 Szymon Majkut
