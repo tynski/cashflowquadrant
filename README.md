@@ -3,7 +3,11 @@
 ### Do you know what is your financial status?
 
 Setup:
-pip install -r requirements.txt
+1. Fork reposirtory
+1. pip install -r requirements.txt
+1. Contribute!
+
+So easy, isn't it?
 
 TODO:
 * Database
