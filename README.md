@@ -11,7 +11,7 @@ TODO:
 * mobile application
 
 Contributors:
-Szymon Majkut
-Kacper Szczygieł
-Anna Gajda
-Bartosz Tyński 
+* Szymon Majkut
+* Kacper Szczygieł
+* Anna Gajda
+* Bartosz Tyński 
