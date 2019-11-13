@@ -2,6 +2,8 @@
 ## Web App
 ### Do you know what is your financial status?
 
+Simple Flask app on bakend, static www on frontend
+
 Setup:
 1. Fork reposirtory
 1. pip install -r requirements.txt
